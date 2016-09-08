@@ -1,0 +1,9 @@
+# Default access modifier - no keyword
+available to any other class in the same package 
+Fields in an interface are implicitly public static final and the methods in an interface are by default public
+
+# Class and interfaces cannot be private
+
+# If the public class we are trying to access is in a different package, then the public class still need to be imported although public grants universal access
+
+# All public methods and variables of a class are inherited by its subclasses
