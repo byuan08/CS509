@@ -2,8 +2,18 @@
 available to any other class in the same package 
 Fields in an interface are implicitly public static final and the methods in an interface are by default public
 
-# Class and interfaces cannot be private
+# Class and interfaces cannot be private or protected
 
 # If the public class we are trying to access is in a different package, then the public class still need to be imported although public grants universal access
 
 # All public methods and variables of a class are inherited by its subclasses
+
+# The main method of an application has to be public in order to be called by Java interpreter
+
+# Variables, methods and constructors which are declared protected in a superclass can be accessed only by the subclasses in other package or any class within the package of the protected members' class
+
+# Class and interfaces can not be protected. Methods and fields of a class can be declared protected, but methods and fields in a interface cannot be declared protected
+
+# Methods declard public in a superclass also must be public in all subclasses
+# Methods declared protected in a superclass must either be protected or public in subclasses; they cannot be private
+# Methods declared private are not inherited, thus no rules for them
