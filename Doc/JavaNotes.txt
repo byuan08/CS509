@@ -1,3 +1,4 @@
+Access Modifiers
 # Default access modifier - no keyword
 available to any other class in the same package 
 Fields in an interface are implicitly public static final and the methods in an interface are by default public
@@ -17,3 +18,27 @@ Fields in an interface are implicitly public static final and the methods in an 
 # Methods declard public in a superclass also must be public in all subclasses
 # Methods declared protected in a superclass must either be protected or public in subclasses; they cannot be private
 # Methods declared private are not inherited, thus no rules for them
+
+
+Non-Access Modifiers
+### static ###
+# Static methods cannot use any instance variables of any object of the class they are defined in
+# Local variables cannot be declared static
+# Static variables and methods can be accessed using the class name(rather than "this")followed by dot and the name of the variable or method
+
+
+### final ###
+1. final variables
+# A final variable can be explicitly initialized only once.
+# A reference variable declared final can never be reassigned to a different object. However data within the object can be changed. So the state of the object can be changed but not the reference
+
+2. final methods
+# final is often used with static to make the constant a class variable
+# final method cannot be overridden by any subclasses. The final modifier prevents a method from being modified in a subclass
+# Intention: method should be changed by outsider
+
+3. final classes
+# Prevents the class form being subclassed. No class can inherit any feature from the final class
+
+### abstract ###
+1. abstract class
