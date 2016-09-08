@@ -42,3 +42,16 @@ Non-Access Modifiers
 
 ### abstract ###
 1. abstract class
+# An abstract class can never be instantiated. Its purpose is for the class to be extended
+# A class cannot be BOTH abstract and final since their intentions oppose to each other
+# If a class contains abstract methods, then the class should be declared abstract. Otherwise a compile error will be thrown
+# An abstract class may contain both abstract methods as well as normal methods
+
+2. abstract methods
+# Abstract methods cannot have any implementation
+# Abstract methods can never be final or strict
+# Any class that extends an abstract class must implment all the abstract mehods of the super class unless the subclass is also an abstract class
+# If a class contains one or more abstract methods then the class must be declared abstract.
+# An abstract class does not need to contain abstract methods
+# The abstract class ends with a semicolon 
+public abstract sample();
